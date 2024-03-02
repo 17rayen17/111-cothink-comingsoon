@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,10 +10,13 @@ export default function Home() {
         </div>
         {/* Hero Image */}
         <div className="flex justify-center items-center max-md:w-[600px] mainPic">
-        <img
+        <Image
             className="mainImage"
             src="/assets/8tbYceJeQb2GYTMVBHsTDg-removebg-preview.png"
             alt="image"
+            width={500}
+            height={100}
+            draggable="false"
           />
         </div>
       </section>
