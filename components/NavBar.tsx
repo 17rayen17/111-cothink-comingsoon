@@ -53,6 +53,7 @@ const NavBar = () => {
               <Image
                 src={nav.src}
                 alt={nav.alt}
+                draggable={false}
                 width={20}
                 height={20}
                 className="object-contain select-none"
