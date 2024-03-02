@@ -12,17 +12,7 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background: rgb(251, 252, 254);
-  /* background: linear-gradient(
-    355deg,
-    rgba(251, 252, 254, 1) 0%,
-    rgba(254, 255, 255, 1) 18%,
-    rgba(255, 255, 255, 1) 32%,
-    rgba(221, 235, 246, 1) 74%,
-    rgba(204, 225, 241, 1) 100%,
-    rgba(152, 196, 227, 1) 100%,
-    rgba(14, 118, 189, 1) 100%
-  ); */
+  background: rgb(235, 238, 247);
 }
 
 .Btn {

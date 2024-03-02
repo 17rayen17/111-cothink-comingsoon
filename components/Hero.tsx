@@ -7,23 +7,30 @@ const Hero = () => {
   const [isSubmited, setIsSubmited] = useState(false);
 
   const handelForm = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmited(true);
-    await sendMail({
-      from: `${mail}`,
-      name: "cothink",
-      subject: "test mail",
-      body: `
-        <div>
-        <h2 style="color: #0E76BD;> Co Think</h2>
-        <div style="border: 1px solid #ccc; padding: 10px; background-color: #f8f8f8;">
-        <h2>${mail}</h2>
-        </div>
-        </div>
-        `,
-    });
-    setIsSubmited(false);
-    setMail('');
+    e.preventDefault();   
+    const emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/ig;
+    if(emailPattern.test(mail)){
+      setIsSubmited(true);
+      await sendMail({
+        from: `${mail}`,
+        name: "cothink",
+        subject: "test mail",
+        body: `
+          <div>
+          <h2 style="color: #0E76BD;> Co Think</h2>
+          <div style="border: 1px solid #ccc; padding: 10px; background-color: #f8f8f8;">
+          <h2>${mail}</h2>
+          </div>
+          </div>
+          `,
+      });
+      setIsSubmited(false);
+      setMail('');
+    }else{
+      alert("Veuillez saisir une adresse e-mail valide");
+      setMail('');
+      setIsSubmited(false);
+    }
   };
   return (
     <div>
@@ -44,7 +51,7 @@ const Hero = () => {
       </p>
       <form onSubmit={handelForm} className="w-[90%] md:w-[70%] mt-6 text-white font-bold relative overflow-hidden select-none">
         <input
-          type="text"
+          type="email"
           placeholder="Email"
           value={mail}
           onChange={(e)=>setMail(e.target.value)}
@@ -54,7 +61,7 @@ const Hero = () => {
           type="submit"
           className="bg-[#2584C5] h-full px-4 rounded-e-lg absolute right-0 top-0"
         >
-          {isSubmited ? 'attendez...' : 'envoyez'}
+          {isSubmited ? 'Envoi en cours...' : 'envoyez'}
         </button>
       </form>
     </div>
