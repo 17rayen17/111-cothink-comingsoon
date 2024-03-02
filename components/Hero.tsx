@@ -48,7 +48,7 @@ const Hero = () => {
         Nous nous excusons pour la gêne occasionnée, notre site est actuellement
         en cours de maintenance. Veuillez revenir ultérieurement
       </p>
-      <form onSubmit={handelForm} className="w-[90%] md:w-[70%] mt-6 text-white font-bold relative overflow-hidden select-none">
+      <form onSubmit={handelForm} className="w-[95%] md:w-[70%] mt-6 text-white font-bold relative overflow-hidden select-none">
         <input
           type="email"
           placeholder="Email"
