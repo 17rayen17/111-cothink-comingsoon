@@ -8,7 +8,7 @@ const Hero = () => {
 
   const handelForm = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();   
-    const emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/ig;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,3}$/ig;
     if(emailPattern.test(mail)){
       setIsSubmited(true);
       await sendMail({
@@ -28,7 +28,6 @@ const Hero = () => {
       setMail('');
     }else{
       alert("Veuillez saisir une adresse e-mail valide");
-      setMail('');
       setIsSubmited(false);
     }
   };
