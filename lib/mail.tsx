@@ -1,12 +1,12 @@
 "use server"
 import nodemailer from "nodemailer";
 export async function sendMail({
-  from,
+  to,
   name,
   subject,
   body,
 }: {
-  from: string;
+  to: string;
   name: string;
   subject: string;
   body: string;
@@ -31,8 +31,8 @@ export async function sendMail({
 
   try {
     const senResult = await transporter.sendMail({
-      from,
-      to: process.env.SMTP_EMAIL,
+      from : process.env.SMTP_EMAIL,
+      to,
       subject,
       html: body,
     });
