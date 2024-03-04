@@ -14,7 +14,7 @@ const Hero = () => {
       await sendMail({
         to: `${mail}`,
         name: "cothink",
-        subject: "Réservez dès maintenant pour une expérience inoubliable sur Cothink !",
+        subject: "Réservez dès maintenant pour une expérience inoubliable sur 111-Cothink !",
         body: `
         <!DOCTYPE html>
 
