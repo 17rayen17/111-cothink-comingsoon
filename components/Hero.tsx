@@ -11,6 +11,7 @@ const Hero = () => {
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,3}$/ig;
     if(emailPattern.test(mail)){
       setIsSubmited(true);
+      alert(`${process.env.CDN_LINK}`);
       await sendMail({
         to: `${mail}`,
         name: "cothink",
