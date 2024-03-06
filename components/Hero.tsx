@@ -120,7 +120,7 @@ const Hero = () => {
         <tr>
         <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
         <div align="center" class="alignment" style="line-height:10px">
-        <div style="max-width: 125px;"><img src="${process.env.CDN_Link}/assets/logo.svg" style="display: block; height: auto; border: 0; width: 100%;" width="125"/></div>
+        <div style="max-width: 125px;"><img src="${process.env.CDN_LINK}/assets/logo.svg" style="display: block; height: auto; border: 0; width: 100%;" width="125"/></div>
         </div>
         </td>
         </tr>
@@ -147,9 +147,9 @@ const Hero = () => {
         <div align="center" class="alignment">
         <table border="0" cellpadding="0" cellspacing="0" class="social-table" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;" width="108px">
         <tr>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/111CoThinkers/" target="_blank"><img alt="Facebook" height="32" src="${process.env.CDN_Link}assets/facebook2x.png" style="display: block; height: auto; border: 0;" title="facebook" width="32"/></a></td>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/company/cothink-111?originalSubdomain=tn" target="_blank"><img alt="Linkedin" height="32" src="${process.env.CDN_Link}assets/linkedin2x.png" style="display: block; height: auto; border: 0;" title="linkedin" width="32"/></a></td>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/111cothink/" target="_blank"><img alt="Instagram" height="32" src="${process.env.CDN_Link}assets/instagram2x.png" style="display: block; height: auto; border: 0;" title="instagram" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/111CoThinkers/" target="_blank"><img alt="Facebook" height="32" src="${process.env.CDN_LINK}assets/facebook2x.png" style="display: block; height: auto; border: 0;" title="facebook" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/company/cothink-111?originalSubdomain=tn" target="_blank"><img alt="Linkedin" height="32" src="${process.env.CDN_LINK}assets/linkedin2x.png" style="display: block; height: auto; border: 0;" title="linkedin" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/111cothink/" target="_blank"><img alt="Instagram" height="32" src="${process.env.CDN_LINK}assets/instagram2x.png" style="display: block; height: auto; border: 0;" title="instagram" width="32"/></a></td>
         </tr>
         </table>
         </div>
