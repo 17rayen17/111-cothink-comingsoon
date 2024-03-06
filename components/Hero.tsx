@@ -120,7 +120,7 @@ const Hero = () => {
         <tr>
         <td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
         <div align="center" class="alignment" style="line-height:10px">
-        <div style="max-width: 125px;"><h1 style="color:#0E76BD, font-size:26px, font-weight: 700">COTHINK</h1></div>
+        <div style="max-width: 125px;"><h1 style="color: #0e76bd, font-size:26px, font-weight: 700">COTHINK</h1></div>
         </div>
         </td>
         </tr>
