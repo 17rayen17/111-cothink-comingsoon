@@ -1,7 +1,7 @@
 "use client"
 import { sendMail } from "@/lib/mail";
 import Image from "next/image";
-import { FormEvent, useState } from "react";
+import { FormEvent,useEffect, useState } from "react";
 const Hero = () => {
   const [mail, setMail] = useState('');
   const [isSubmited, setIsSubmited] = useState(false);
