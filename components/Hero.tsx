@@ -151,9 +151,9 @@ const Hero = () => {
         <div align="center" class="alignment">
         <table border="0" cellpadding="0" cellspacing="0" class="social-table" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block;" width="108px">
         <tr>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/111CoThinkers/" target="_blank"><img alt="Facebook" height="32" src={`${host}assets/facebook2x.png`} style="display: block; height: auto; border: 0;" title="facebook" width="32"/></a></td>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/company/cothink-111?originalSubdomain=tn" target="_blank"><img alt="Linkedin" height="32" src={`${host}assets/linkedin2x.png`} style="display: block; height: auto; border: 0;" title="linkedin" width="32"/></a></td>
-        <td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/111cothink/" target="_blank"><img alt="Instagram" height="32" src={`${host}assets/instagram2x.png`} style="display: block; height: auto; border: 0;" title="instagram" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.facebook.com/111CoThinkers/" target="_blank"><img alt="Facebook" height="32" src="${host}assets/facebook2x.png" style="display: block; height: auto; border: 0;" title="facebook" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.linkedin.com/company/cothink-111?originalSubdomain=tn" target="_blank"><img alt="Linkedin" height="32" src="${host}assets/linkedin2x.png" style="display: block; height: auto; border: 0;" title="linkedin" width="32"/></a></td>
+        <td style="padding:0 2px 0 2px;"><a href="https://www.instagram.com/111cothink/" target="_blank"><img alt="Instagram" height="32" src="${host}assets/instagram2x.png" style="display: block; height: auto; border: 0;" title="instagram" width="32"/></a></td>
         </tr>
         </table>
         </div>
